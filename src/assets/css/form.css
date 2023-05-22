@@ -1,0 +1,156 @@
+body
+{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+  
+  .form{
+    width: 600px;
+    height: 300px;
+    margin: auto;
+
+  }
+
+  .dentro{  
+    background-color: #766496f5; 
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mensaje{
+    width: 50%;
+    height: 100%;
+    font-size: 10px;
+    box-sizing: border-box;
+  }
+  
+  .mensaje{
+    font-weight: 200;
+    font-size: 23px;
+  }
+  
+  .mensaje p {
+    font-weight: 100;
+  }
+
+  .texto{
+    color:white;
+    margin-top:100px;
+    margin-bottom:65px;
+  }
+
+  .logobrand{
+    margin-top:20px; 
+  }
+    
+  /*-----------------BOTON------------------------*/
+  .frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  button {
+    margin: 20px;
+  }
+  .form-btn { 
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+/* 15 */
+.btn-1 {
+  background: #3A4966;
+  border: none;
+  z-index: 1;
+}
+.btn-1:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #D7A9C3;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.btn-1:hover {
+  color: #fff;
+}
+.btn-1:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-1:active {
+  top: 2px;
+}
+
+#redes
+{
+  color: #3A4966;
+  margin-bottom: 30px;
+}
+/********************************************/
+
+
+.share {
+  display: flex;
+  justify-content: center;
+}
+.share a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 0 5px 5px 5px;
+  -webkit-border-radius: 0 5px 5px 5px;
+  -moz-border-radius: 0 5px 5px 5px;
+  -ms-border-radius: 0 5px 5px 5px;
+  -o-border-radius: 0 5px 5px 5px;
+  transition: all 400ms ease;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+}
+
+.share .whatsapp {
+  background: #25d366;
+}
+.share .whatsapp:hover {
+  color: #25d366;
+  background: transparent;
+  border: 1px dashed #25d366;
+}
+
+.share .facebook {
+  background: #385898;
+}
+.share .facebook:hover {
+  color: #385898;
+  background: transparent;
+  border: 1px dashed #385898;
+}
+.share .twitter {
+  background: #1b9df0;
+}
+.share .twitter:hover {
+  color: #1b9df0;
+  background: transparent;
+  border: 1px dashed #1b9df0;
+}

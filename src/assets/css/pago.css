@@ -1,0 +1,60 @@
+.color
+{
+    color: #3A4966;
+}
+ /*-----------------BOTON------------------------*/
+
+ .frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  button {
+    margin: 20px;
+  }
+  .btn-pago {
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  /* 6 */
+  .btn-pago {
+    background: #3A4966;
+    border: none;
+    z-index: 1;
+  }
+  .btn-pago:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #3A4966;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .btn-pago:hover {
+    color: #fff;
+  }
+  .btn-pago:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn-pago:active {
+    top: 2px;
+  }

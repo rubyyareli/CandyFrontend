@@ -1,0 +1,160 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+/* Product card overall layout */
+.product-card {
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 2px 20px 15px 0px rgba(0, 0, 0, 0.4);
+  margin: 0em 2em;
+  background: linear-gradient(to right, white, 1%, white, white, white)
+}
+
+.product-card-title {
+  padding-left:15px;
+  margin: 20px;
+  color: #3A4966;
+}
+
+.product-card-star-group {
+  padding-left: 30px;
+}
+
+#original-price {
+  display: inline-block;
+  
+}
+
+#new-price {
+  color: #3A4966;
+  display: inline-block;
+  padding-left: 0.3em;
+}
+
+#instock {
+  color: #766496;
+  padding-top: 0.3em;
+}
+
+.icon-button {
+  vertical-align: middle;
+}
+
+#purchase-container {
+  margin: 1.3em 0em;
+  margin-right: 10px;
+}
+
+.quantity-button-group:active {
+  background: #F5F5F5;
+}
+
+#add-to-cart-button {
+  width: 100%;
+  height: 37px;
+  font-size: 15px;
+  font-weight: bold;
+  background:#8BC34A;
+  border: 1px solid #689F38;
+  color: white;
+}
+
+#add-to-cart-button:active {
+  background: #689F38;
+}
+
+#product-detail-container {
+  margin-top: 2.3em;
+  color: #3A4966;
+
+}
+
+.nav-link.product-detail-selection-nav {
+  border: none;
+  color: #757575;
+  margin-right: 20px;
+  padding: 0px;
+  color: #3A4966;
+
+}
+
+.nav-link.product-detail-selection-nav.active {
+  border-bottom: 2px solid;
+  color: #212121;
+  font-weight: bold;
+  color: #3A4966;
+
+}
+
+.product-detail-content {
+  margin-top: 1em;
+}
+
+.product-question {
+  font-weight: bold;
+}
+
+
+
+  /*-----------------BOTON------------------------*/
+
+  .frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  button {
+    margin: 20px;
+  }
+  .custom-btn {
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  /* 15 */
+  .btn-15 {
+    background: #A797C4;
+    border: none;
+    z-index: 1;
+  }
+  .btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #3A4966;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .btn-15:hover {
+    color: #fff;
+  }
+  .btn-15:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn-15:active {
+    top: 2px;
+  }

@@ -1,0 +1,141 @@
+#cart {
+  max-width: 1440px;
+  padding-top: 40px;
+  margin: auto;
+}
+
+.cartItem {
+  --bs-gutter-x: 1.5rem;
+}
+.cartItemQuantity,
+.proceed {
+  background: #eeeeee6b;
+}
+.items {
+  padding-right: 30px;
+}
+
+.color
+{
+    color: #3A4966;
+}
+
+
+/* stasysiia.com */
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #111;
+  border-color: transparent;
+  box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}
+
+
+/*PREVENT BROWSER SELECTION*/
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+/*main*/
+main:before {
+  content: "";
+  display: block;
+  height: 88px;
+}
+
+
+/* yukito bloody */
+.back {
+  position: relative;
+  top: -30px;
+  font-size: 16px;
+  margin: 10px 10px 3px 15px;
+}
+.inline {
+  display: inline-block;
+}
+
+
+.medio
+{
+    text-align: center;
+}
+
+
+.ma {
+  margin: auto;
+}
+
+#mycart {
+  min-width: 90px;
+}
+#cartItems {
+  font-size: 17px;
+}
+#product .container .row .pr4 {
+  padding-right: 15px;
+}
+#product .container .row .pl4 {
+  padding-left: 15px;
+}
+
+
+ /*-----------------BOTON------------------------*/
+
+ .frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  button {
+    margin: 20px;
+  }
+  .btn-pago {
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  /* 6 */
+  .btn-pago {
+    background: #3A4966;
+    border: none;
+    z-index: 1;
+  }
+  .btn-pago:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #3A4966;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .btn-pago:hover {
+    color: #fff;
+  }
+  .btn-pago:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn-pago:active {
+    top: 2px;
+  }

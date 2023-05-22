@@ -1,0 +1,219 @@
+/**
+ * Project dashboard UI.
+ *
+ * A fun CSS exercise based on Raaz Das's 'Project Management
+ * Dashboard Concept' shot on Dribbble:
+ *
+ * https://dribbble.com/shots/3338282-Project-Management-Dashboard-Concept
+ */
+
+/** Variables */
+:root {
+    --color-aquamarine: #4ECFAE;
+    --color-black: #20252A;
+    --color-blue: #4B8BFE;
+    --color-blue-light: #D0E6FF;
+    --color-blue-lighter: #E9ECF4;
+    --color-gray: #BFC0C1;
+    --color-gray-dark: #979899;
+    --color-gray-light: #EBECED;
+    --color-green: #70BB1A;
+    --color-green-light: #CFEBB9;
+    --color-orange: #FB5E32;
+    --color-navy: #364F63;
+    --color-white: #FEFFFF;
+    
+    --font-size-xs: .75rem;
+    --font-size-sm: .875rem;
+    --font-size-md: 1.25rem;
+    
+    --spacing-header-height: 4rem;
+    --spacing-panel-horizontal: 1.5rem;
+    --spacing-sidebar-width: 16rem;
+  }
+  
+  /** TODO: Use screen reader-only class on button */
+  .search-submit {
+    display: none;
+  }
+  
+  /** Panel */
+  .panel {
+    background: var(--color-white);
+    border: 2px solid var(--color-gray-light);
+    border-radius: 2px;
+  }
+  .panel-title {
+    border-bottom: 2px solid var(--color-gray-light);
+    font-size: 100%;
+    font-weight: 400;
+    line-height: inherit;
+    margin: 0 0 .75rem;
+    padding: 1rem var(--spacing-panel-horizontal);
+  }
+  
+  /** Project */
+  .project {
+    align-items: center;
+    display: flex;
+    margin: .5rem;
+    padding: 1.25rem var(--spacing-panel-horizontal);
+    justify-content: space-between;
+  }
+  .project-name {
+    font-size: var(--font-size-md);
+    font-weight: 400;
+    line-height: inherit;
+    margin: 0;
+    width: 20%;
+  }
+  .project-name:before {
+    content: 'Nombre';
+    color: var(--color-gray);
+    font-size: var(--font-size-xs);
+    display: block;
+    text-transform: uppercase;
+  }
+  .project-meta {
+    color: var(--color-gray);
+    display: flex;
+    flex-grow: 2;
+    font-size: var(--font-size-xs);
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .project-meta strong {
+    color: var(--color-black);
+    display: block;
+    font-size: var(--font-size-md);
+    font-weight: 400;
+    text-transform: none;
+  }
+  .project-controls {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .project-delete {
+    color: var(--color-gray-dark);
+    display: inline-block;
+    text-decoration: none;
+    margin-left: .5rem;
+    padding: .6rem 1rem;
+    vertical-align: middle;
+  }
+  .project-delete:active,
+  .project-delete:focus,
+  .project-delete:hover {
+    color: var(--color-black);  
+  }
+  
+  @media (min-width: 30em) {
+    .project-name {
+      width: 20%;
+    }
+    .project-controls {
+      order: 2;
+      width: 20%;
+    }
+  }
+  .color
+  {
+    color: #3A4966;
+  }
+
+   /*-----------------BOTON------------------------*/
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+  width: 55px;
+}
+.dash-btn {
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+/* 6 */
+.btn-6 {
+  background: #A797C4;
+  border: none;
+  z-index: 1;
+}
+.btn-6:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #766496;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.btn-6:hover {
+  color: #fff;
+}
+.btn-6:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-6:active {
+  top: 2px;
+}
+
+
+/* 7 */
+.btn-7 {
+  background: #3A4966;
+  border: none;
+  z-index: 1;
+}
+.btn-7:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #D7A9C3;
+  border-radius: 5px;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.btn-7:hover {
+  color: #fff;
+}
+.btn-7:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-7:active {
+  top: 2px;
+}
+
+ 
